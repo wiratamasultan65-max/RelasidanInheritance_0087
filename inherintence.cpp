@@ -21,3 +21,15 @@ public:
         return a + b;
     }
 };
+
+// pembuatan class pelajar sebagai pewaris (child) dari class orang
+class pelajar : public orang {
+public:
+    // deklarasi member variabel dari class pelajar
+    string sekolah;
+
+    // pembuatan constructor dan destructor dari class pelajar
+    // constructor memanggil constructor parent (orang)
+    pelajar(string pNama, string pSekolah) : orang(pNama), sekolah(pSekolah) {
+        cout << "Pelajar dibuat\n" << endl;
+    }
