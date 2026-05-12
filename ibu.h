@@ -15,3 +15,8 @@ public:
     // deklarasi member variabel pada class ibu
     string nama;
     vector<anak*> daftar_anak;
+
+    // membuat constructor dan destructor pada class ibu
+    Ibu(string pNama) : nama(pNama) {
+        cout << "Ibu \"" << nama << "\" ada\n";
+    };
