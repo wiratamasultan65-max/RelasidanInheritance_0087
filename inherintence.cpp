@@ -12,3 +12,12 @@ public:
     orang(string pNama) : nama(pNama) {
         cout << "Orang dibuat\n" << endl;
     }
+     ~orang() {
+        cout << "Orang dihapus\n" << endl;
+    }
+
+    // pembuatan function jumlah
+    int jumlah(int a, int b) {
+        return a + b;
+    }
+};
