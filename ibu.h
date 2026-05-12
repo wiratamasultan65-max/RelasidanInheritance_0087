@@ -20,3 +20,12 @@ public:
     Ibu(string pNama) : nama(pNama) {
         cout << "Ibu \"" << nama << "\" ada\n";
     };
+
+    ~Ibu() {
+        cout << "Ibu \"" << nama << "\" tidak ada\n";
+    };
+
+    // deklarasi prosedur tambahAnak() dan cetakAnak()
+    void tambahAnak(anak* pAnak);
+    void cetakAnak();
+};
