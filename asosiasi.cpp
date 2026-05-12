@@ -17,3 +17,11 @@ public:
     pasien(string pNama) : nama(pNama) {
         cout << "Pasien \"" << nama << "\" ada\n";
     }
+     ~pasien() {
+        cout << "Pasien \"" << nama << "\" tidak ada\n";
+    }
+
+    // deklarasi prosedur tambahDokter() dan cetakDokter()
+    void tambahDokter(dokter*);
+    void cetakDokter();
+};
